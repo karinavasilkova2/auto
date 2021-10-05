@@ -1,0 +1,77 @@
+body{
+    background: Silver;
+    margin:0;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.box_1 .box_2{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.box_1 img{
+    width:70%;
+    height:50%;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      }.box_1 img:hover {
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+
+      
+}
+.box_2 img{
+    width:80%;
+    height:60%; 
+    -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      }.box_2 img:hover {
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      transform: rotate(-10deg); 
+}
+.container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+.scrolling {
+    will-change: transform;
+    font-size: 60px;
+    animation: marquee 30s linear infinite;
+    display: inline-block;
+    padding-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to { 
+      transform: translateX(-100%);
+    }
+}
+h2{
+  text-align: center;
+    font-size: 80px;
+    color: LavenderBlush;
+    font-family: 'Courier New', Courier, monospace;
+}
